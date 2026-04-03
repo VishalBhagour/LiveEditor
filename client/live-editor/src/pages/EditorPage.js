@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import Client from '../components/Client';
 import Editor from '../components/Editor';
+
+import Client from '../components/Client';
 
 
 const EditorPage = () => {
 
     const [clients, setClients] = useState([
+
         { socketId: 1, username: 'Rakesh K' },
         { socketId: 2, username: 'John Doe' },
     ]);
