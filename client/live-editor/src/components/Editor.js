@@ -1,6 +1,7 @@
 import React, { useEffect} from 'react';
 import Codemirror from "codemirror";
 import "codemirror/lib/codemirror.css";
+
 import "codemirror/theme/dracula.css";
 import "codemirror/addon/edit/closebrackets";
 import "codemirror/mode/javascript/javascript";
@@ -12,6 +13,7 @@ import "codemirror/addon/edit/closetag";
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
     useEffect(() => {
         async function init() {Codemirror.fromTextArea(
+            
                 document.getElementById('realtimeEditor'),
                 {
                     mode: { name: 'javascript', json: true },
